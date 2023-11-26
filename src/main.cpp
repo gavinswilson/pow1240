@@ -16,15 +16,18 @@ int main(int argc, char* argv[])
     std::cout << "You have entered " << argc << " arguments" << std::endl;
     
     unsigned long long int bob;
-
+    std::string divisible;
+    
     for (int i = 1; i < argc; i++) 
     {
-        std::cout << argv[i] << " " << std::endl;
+        // std::cout << argv[i] << " " << std::endl;
+        
+        if (divisible_by_num(std::stoi(argv[i]),11)==0)
+            divisible="no";
+        else
+            divisible="yes";
 
-        int answer = divisible_by_num(std::stoi(argv[i]),11);
-
-        std::cout << std::stoi(argv[i]) << " " << answer << std::endl;
-
+        std::cout << std::stoi(argv[i]) << " " <<  divisible << std::endl;
     }
     
     
