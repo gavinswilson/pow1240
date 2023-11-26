@@ -1,0 +1,3 @@
+/home/gavinswilson/Code/pow1240/build/CMakeFiles/rebuild_cache.dir
+/home/gavinswilson/Code/pow1240/build/CMakeFiles/edit_cache.dir
+/home/gavinswilson/Code/pow1240/build/CMakeFiles/pow1240.dir
