@@ -11,6 +11,11 @@ int divisible_by_num(int num, int div)
         return 0;
 }
 
+int number_of_digits (int num)
+{
+    return log10(num)+1;
+}
+
 int main(int argc, char* argv[]) 
 { 
     std::cout << "You have entered " << argc << " arguments" << std::endl;
@@ -27,7 +32,7 @@ int main(int argc, char* argv[])
         else
             divisible="yes";
 
-        std::cout << std::stoi(argv[i]) << " " <<  divisible << std::endl;
+        std::cout << std::stoi(argv[i]) << " " <<  divisible << " " << number_of_digits(std::stoi(argv[i])) << std::endl;
     }
     
     
