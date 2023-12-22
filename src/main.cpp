@@ -14,6 +14,7 @@ int divisible_by_num(int num, int div)
 int number_of_digits (int num)
 {
     return log10(num)+1;
+    //test
 }
 
 int main(int argc, char* argv[]) 
